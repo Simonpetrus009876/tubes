@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUBES JARTEL</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="color-picker-wrapper">
+        <label for="color-picker">Choose Background Color: </label>
+        <select id="color-picker">
+            <option value="#004266">Default</option>
+            <option value="#ff5733">Red</option>
+            <option value="#33ff57">Green</option>
+            <option value="#3357ff">Blue</option>
+            <option value="#f1c40f">Yellow</option>
+            <option value="#9b59b6">Purple</option>
+            <option value="#e74c3c">Orange</option>
+            <option value="#2ecc71">Mint</option>
+            <option value="#1abc9c">Turquoise</option>
+            <option value="#34495e">Navy</option>
+            <option value="#7f8c8d">Gray</option>
+        </select>
+    </div>
+
+    <main>
+        <h1 id="site-title">KELOMPOK 1</h1>
+        <div id="join-wrapper">
+            <input id="username" type="text" placeholder="Enter your name..." />
+            <button id="join-btn">JOIN</button>
+        </div>
+        <div id="user-streams"></div>
+
+        <div id="footer">
+            <div class="icon-wrapper">
+                <img class="control-icon" id="camera-btn" src="./assets/video.svg" />
+                <p>CAM</p>
+            </div>
+
+            <div class="icon-wrapper">
+                <img class="control-icon" id="mic-btn" src="./assets/microphone.svg" />
+                <p>MIC</p>
+            </div>
+
+            <div class="icon-wrapper">
+                <img class="control-icon" id="leave-btn" src="./assets/leave.svg" />
+                <p>LEAVE</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://download.agora.io/sdk/release/AgoraRTC_N.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
